@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+</head><body>
+<{$xoops_module_header}> 
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="96" background="<{$xoops_imageurl}>headermiddle.gif">
+<tr>
+<td width="300" align="left" valign="top"><img src="<{$xoops_imageurl}>logo.jpg" width="300" height="96"></td>
+<td>&nbsp;</td>
+<td width="300" align="left" valign="top"><img src="<{$xoops_imageurl}>headerright.jpg" width="300" height="96" /></td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="26">
+<tr> 
+<th width="180" background="<{$xoops_imageurl}>middleheadertop.gif" align="center"><font color="#999999">
+<script type="text/javascript" language="">
+var monthNames = new Array( "Januari","Februari","Maart","April","Mei","Juni","Juli","Augustus","September","Oktober","November","December");
+var now = new Date();
+thisYear = now.getYear();
+if(thisYear < 1900) {thisYear += 1900}; 
+document.write(now.getDate() + " " + monthNames[now.getMonth()] + ", " + thisYear);
+</script>
+</font></th>
+<th background="<{$xoops_imageurl}>middleheadertop.gif" align="center"> <font color="#CCCCCC"><{$xoops_slogan}></font></font></th>
+<th width="180" background="<{$xoops_imageurl}>rightheadertop.gif">&nbsp;</th>
+</tr>
+</table>
+<div align="center"></div>
+<table cellspacing="0">
+<tr>
+<td id="leftcolumn" height="143"> 
+<{foreach item=block from=$xoops_lblocks}> <{include file="montisblue/theme_blockleft.html"}> 
+<{/foreach}> 
+</td>
+<td height="143" align="center" valign="top" id="centercolumn"> 
+<{if $xoops_showcblock == 1}> <{$xoops_banner}><br>
+<table cellspacing="0">
+<tr>
+<td id="centerCcolumn" colspan="2"> 
+<{foreach item=block from=$xoops_ccblocks}> <{include file="montisblue/theme_blockcenter_c.html"}> 
+<{/foreach}> 
+</td>
+</tr>
+<tr>
+<td id="centerLcolumn"> 
+<{foreach item=block from=$xoops_clblocks}> <{include file="montisblue/theme_blockcenter_l.html"}> 
+<{/foreach}> 
+</td>
+<td id="centerRcolumn"> 
+<{foreach item=block from=$xoops_crblocks}> <{include file="montisblue/theme_blockcenter_r.html"}> 
+<{/foreach}> 
+</td>
+</tr>
+</table>
+<{/if}>
+<div id="content">
+<{$xoops_contents}>
+</div>
+</td>
+<{if $xoops_showrblock == 1}>
+<td id="rightcolumn" height="143"> 
+<{foreach item=block from=$xoops_rblocks}> <{include file="montisblue/theme_blockright.html"}> 
+<{/foreach}> 
+</td>
+<{/if}>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="#000000">
+<tr>
+<td bgcolor="#808B95"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bordercolor="#808B95">
+<tr> 
+<td> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="10%" align="center" bgcolor="#000000"><font face="Tahoma" size="1"><br>
+</font><br>
+</td>
+<td width="1" bgcolor="#000000"><img src="<{$xoops_imageurl}>spacer.gif" width="1" height="1" border="0"></td>
+<td width="6" height="1" bgcolor="#000000"><img src="<{$xoops_imageurl}>spacer.gif" width="6" height="1" border="0"></td>
+<td width="1" bgcolor="#000000"><img src="<{$xoops_imageurl}>spacer.gif" width="8" height="8" border="0"></td>
+<td align="center" width="100%" height="1" bgcolor="#000000" valign="middle"><a href="http://xoops.codigolivre.org.br" target="_blank"><font face="Tahoma" size="1">Powered
+by<br />
+</font><img src="<{$xoops_imageurl}>xpower.gif" width="88" height="31" alt="Xoops!" border="0" /></a> <font color="#FFFFFF"> <br />
+Theme
+by <a href="http://www.montisarts.com">Montisarts Webdesign</a> &copy;2004</font></td>
+<td width="1" bgcolor="#000000"><img src="<{$xoops_imageurl}>spacer.gif" width="8" height="8" border="0"></td>
+<td width="6" height="1" bgcolor="#000000"><img src="<{$xoops_imageurl}>spacer.gif" width="6" height="1" border="0"></td>
+<td width="1" bgcolor="#000000"><img src="<{$xoops_imageurl}>spacer.gif" width="1" height="1" border="0"></td>
+<td width="10%" align="center" bgcolor="#000000">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0"
+style="border: 1px solid rgb(0,0,0)">
+<tr> 
+<td width="100%" bgcolor="#FEE9E4"></td>
+<td width="19" bgcolor="#FEE9E4"></td>
+</tr>
+<tr> 
+<td width="33%" bgcolor="#C0C0C0" height="1"></td>
+<td width="19" bgcolor="#C0C0C0" height="1"></td>
+</tr>
+</table>
+</body>
+</HTML>
